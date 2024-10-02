@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^uz$ uz.php [L]
+RewriteRule ^ru$ index.php [L]
+RewriteRule ^oz$ oz.php [L]
