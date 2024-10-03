@@ -10,20 +10,26 @@
     <link rel="stylesheet" href="resources/styles/styles.css">
 </head>
 <body>
+    <div class="language-selector">
+            <button class="lang-button" onclick="window.location.href='/ru'">Ру</button>
+            <button class="lang-button" onclick="window.location.href='/uz'">Уз</button>
+            <button class="lang-button" onclick="window.location.href='/oz'">O`z</button>
+    </div>
+    
     <header>
         Перечень <br>идентификационных кодов продукции бытовой техники с обязательной цифровой маркировкой
     </header>
-
+    
     <table>
-        <thead>
-            <tr>
-                <th>№ п/п</th>
-                <th>Название продукта</th>
-                <th>Позиция <br>ТН ВЭД</th>
-                <th>Код <br>ТН ВЭД*</th>
-                <th>Код класса идентификационных кодов продукции</th>
-            </tr>
-        </thead>
+    <thead>
+        <tr>
+            <th class="index-column">№ <br>п/п</th>
+            <th class="product-name-column">Название продукта</th>
+            <th class="tnved-position-column">Позиция <br>ТН ВЭД</th>
+            <th class="tnved-code-column">Код <br>ТН ВЭД*</th>
+            <th class="product-id-code-class-column">Код класса идентификационных кодов продукции</th>
+        </tr>
+    </thead>
         <tbody>
             <?php
             $data = [
@@ -60,7 +66,6 @@
             ?>
         </tbody>
     </table>
-
     <div class="form-container">
         <div class="form">
             <p>* Перечисленные коды ТН ВЭД и ИКПУ могут быть изменены Государственным налоговым комитетом Республики Узбекистан по согласованию с оператором НИС «Asl belgisi»</p>
@@ -71,7 +76,6 @@
             <p>Маркировка бытовой техники стартовала 15 апреля 2022 года в соответствие с Постановлением Кабинета Министров <a href="https://lex.uz/docs/5939822" target="_blank">№ 148</a> от 02.04.2022 г.</p>
         </div>
     </div>
-
     <footer>
         <p>&copy; 2024 Справочная информация о цифровой маркировке ASL BELGISI. Все права защищены.</p>
     </footer>
